@@ -19,28 +19,69 @@ no_index:
     - inc
     - t
 requires:
-  App::cpanminus: 0
-  CGI: 0
+  App::cpanminus: 0.9923
+  CGI: 3.47
   CGI::FormBuilder::Source::Perl: 0
+  CPAN::Uploader: 0
+  Carp::Always: 0
+  Catalyst: 5.80
+  Catalyst::Action::REST: 0
+  Catalyst::ActionRole::ACL: 0
+  Catalyst::Authentication::Credential::HTTP: 0
+  Catalyst::Authentication::Store::DBIx::Class: 0
+  Catalyst::Component::InstancePerContext: 0
+  Catalyst::Controller::ActionRole: 0
+  Catalyst::Devel: 1.26
+  Catalyst::Manual: 5.80
+  Catalyst::Model::Adaptor: 0
+  Catalyst::Model::DBIC::Schema: 0
+  Catalyst::Plugin::Authentication: 0
+  Catalyst::Plugin::ConfigLoader: 0
+  Catalyst::Plugin::I18N: 0
+  Catalyst::Plugin::Session: 0
+  Catalyst::Plugin::Session::State::Cookie: 0
+  Catalyst::Plugin::Session::Store::DBIC: 0
+  Catalyst::Plugin::Session::Store::File: 0
+  Catalyst::Plugin::StackTrace: 0
+  Catalyst::Plugin::Static::Simple: 0
+  Catalyst::Plugin::Unicode::Encoding: 0
+  Catalyst::View::Email: 0
+  Catalyst::View::TT: 0
+  CatalystX::Component::Traits: 0
+  CatalystX::LeakChecker: 0
+  CatalystX::Profile: 0
+  CatalystX::REPL: 0
+  CatalystX::SimpleLogin: 0
+  Cwd: 3.2701
+  DBD::SQLite: 1.35
+  DBI: 1.58
+  DBIx::Class: 0
+  DBIx::Class::Schema::Loader: 0
   Data::Dumper: 0
-  DateTime: 0
   Devel::Cover: 0
-  Encode: 0
+  Devel::NYTProf: 0
+  Dist::Zilla: 0
+  Encode: 2.26
+  FCGI: 0
   File::Find: 0
   Getopt::Long: 0
+  HTTP::Lite: 0
   JSON: 2.0
   JSON::PP: 0
-  JSON::XS: 0
+  JSON::XS: 2.29
+  LWP::Simple: 0
+  LWP::UserAgent: 5.815
   Log::Contextual: 0
   Log::Dispatch: 0
   Log::Log4perl: 0
   MIME::Types: 0
+  Modern::Perl: 0
+  Module::Install: 0
   Moose::Autobox: 0
   MooseX::App::Cmd: 0
   MooseX::ClassAttribute: 0
   MooseX::Clone: 0
   MooseX::ConfigFromFile: 0
-  MooseX::Daemonize: 0
   MooseX::Declare: 0
   MooseX::Getopt: 0
   MooseX::GlobRef: 0
@@ -55,7 +96,6 @@ requires:
   MooseX::POE: 0
   MooseX::Param: 0
   MooseX::Params::Validate: 0
-  MooseX::Role::Cmd: 0
   MooseX::Role::Parameterized: 0
   MooseX::Role::TraitConstructor: 0
   MooseX::SemiAffordanceAccessor: 0
@@ -69,11 +109,18 @@ requires:
   MooseX::Types::Path::Class: 0
   MooseX::Types::Set::Object: 0
   MooseX::Types::Structured: 0
-  MooseX::Workers: 0
   POE: 0
+  Perl::Critic: 0
+  Perl::Tidy: 0
+  Perl::Version: 0
   Plack: 0
   Pod::Coverage::Moose: 0
+  Pod::Readme: 0
+  SQL::Translator: 0
   Set::Object: 0
+  Software::License: 0
+  Spreadsheet::ParseExcel::Simple: 0
+  Spreadsheet::WriteExcel::Simple: 0
   Sys::Hostname: 0
   Template: 0
   Test::Deep: 0
@@ -81,18 +128,27 @@ requires:
   Test::Harness: 0
   Test::Memory::Cycle: 0
   Test::Most: 0
-  Test::NoWarnings: 0
+  Test::NoWarnings: 0.084
   Test::Pod: 0
   Test::Pod::Coverage: 0
   Test::Requires: 0
-  Test::Simple: 0
+  Test::Simple: 0.88
+  Test::WWW::Mechanize::Catalyst: 0
+  Text::CSV_XS: 0
   Text::Markdown: 0
-  Time::HiRes: 0
+  Time::HiRes: 1.9718
   Time::Piece: 0
   Time::Seconds: 0
   Try::Tiny: 0
+  WWW::Mechanize: 0
+  WWW::Mechanize::TreeBuilder: 0
   XML::Atom: 0
+  XML::Generator::PerlData: 0
+  XML::LibXML: 0
+  XML::LibXSLT: 0
   XML::RSS: 0
+  XML::SAX: 0
+  XML::SAX::Writer: 0
   XML::XPath: 0
   YAML: 0
   YAML::Syck: 0
@@ -100,8 +156,8 @@ requires:
   namespace::autoclean: 0
   perl: 5.008
   utf8: 0
-  version: 0
+  version: 0.95
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/dwimperl/Task-DWIM
-version: 0.02
+version: 0.03
