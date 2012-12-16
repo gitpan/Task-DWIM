@@ -1,4 +1,6 @@
+bin/dependencies.pl
 CHANGES
+desktop.txt
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -14,3 +16,4 @@ META.yml
 modules.txt
 README
 t/00-load.t
+windows.txt

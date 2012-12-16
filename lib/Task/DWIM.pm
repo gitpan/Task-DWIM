@@ -2,23 +2,36 @@ package Task::DWIM;
 
 use 5.008;
 use strict;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
+
+my %modules;
+
+sub get_modules {
+    read_modules('modules.txt');
+    if ($^O eq 'MSWin32') {
+        read_modules('windows.txt');
+    }
+
+    return %modules;
+}
 
 sub read_modules {
-    my %modules;
-    open my $fh, '<', 'modules.txt' or die;
+    my ($file) = @_;
+
+    open my $fh, '<', $file or die "Could not open '$file' $!";
     while (my $line = <$fh>) {
         chomp $line;
         next if $line =~ /^\s*(#.*)?$/;
         $line =~ s/\s*#.*//;
         my ($name, $version) = split /\s*=\s*/, $line;
+        die "No version in '$line'" if not defined $version;
         if (exists $modules{$name}) {
             die "Module '$name' has 2 entries. One with '$modules{$name}' and the other one with '$version'";
         }
         $modules{$name} = $version;
     }
     close $fh;
-    return \%modules;
+    return;
 }
 
 
